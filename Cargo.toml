@@ -1,0 +1,20 @@
+[package]
+name = "rusterio"
+version = "0.1.0"
+authors = ["Ville Niittunen <ww.niittunen@hotmail.com>"]
+
+[dependencies]
+rocket = "0.2.0"
+rocket_codegen = "0.2.0"
+serde = "0.9"
+serde_json = "0.9"
+serde_derive = "0.9"
+diesel = { version = "^0.11.0", features = ["sqlite"] }
+diesel_codegen = { version = "^0.11.0", features = ["sqlite"] }
+dotenv_macros = "0.10.0"
+dotenv = "0.8.0"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json"]
